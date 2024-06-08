@@ -10,6 +10,8 @@ function App() {
       <button>Normal button</button>
       <Button>Boot button</Button>
 
+      <Button>Boot button</Button>
+
 
       
     </div>
