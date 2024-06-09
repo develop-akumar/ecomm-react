@@ -33,6 +33,7 @@ export default function Header() {
             {
               localStorage.getItem("user-info") ? 
               <>
+              <Link to="/" href="#home">Product List</Link>
               <Link to="/add" href="#home">Add Product</Link>
               <Link to="/update" href="#features">Update product</Link>
               <Button className='btn btn-danger' onClick={()=>{logout()}}>Logout</Button>
