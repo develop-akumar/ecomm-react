@@ -36,7 +36,9 @@ export default function Register() {
             console.log('res = ', res); 
             return res.json() })
             .then((json) => {
-                console.log('json = ', json);
+                json = JSON.stringify(json)
+                // console.log('json = ', json);
+                // console.log('json.name = ', json.title);
                 localStorage.setItem("user-info", json)
                 navigate("/login")
             })
